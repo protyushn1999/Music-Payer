@@ -8,6 +8,9 @@
 body {
   font-family: "DM Sans", sans-serif;
 }
+input[type="text"] {
+  font-family: "DM Sans", sans-serif;
+}
 
 :root {
   --dark-purple: #0c1027;
@@ -20,25 +23,55 @@ body {
   background-color: var(--dark-purple);
 }
 
+/*
+CSS Flexbox Attributes used:
+justify-content - set spacing along the main axis
+align-self - align along the cross axis (used for individual div)
+align-items - align along the cross axis(used for all elements in that flexbox)
+
+*/
+
 .inner_header {
   width: 90%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   margin: 0 auto;
   background-color: var(--dark-purple);
+  align-items: center;
 }
 
 .logo_container {
   height: 50%;
   display: flex;
   flex-direction: row;
+  /* align-self: center; */
 
   margin: 2%;
   color: white;
+  max-width: 15%;
+  align-items: center;
 }
 
 .logo_container img {
   margin-right: 0.5rem;
+  height: 100%;
+}
+
+.search_bar {
+  /* align-self: center; */
+  margin: 2%;
+}
+
+.circular_square {
+  border-radius: 50%;
+  max-height: 100%;
+}
+
+.profile {
+  margin: 2%;
+  display: inline;
+  height: 50%;
+  margin: 2%;
 }
