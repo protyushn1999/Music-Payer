@@ -2,4 +2,4 @@
 
 ## Agile Methodology
 
-[Link to Trello Board] (https://trello.com/b/jZKgFrwE)
+[Link to Trello Board](https://trello.com/b/jZKgFrwE)
