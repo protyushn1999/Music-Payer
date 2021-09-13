@@ -75,3 +75,46 @@ align-items - align along the cross axis(used for all elements in that flexbox)
   height: 50%;
   margin: 2%;
 }
+
+.search_bar {
+  background: #151d46;
+  border-radius: 2em;
+  margin: 2em;
+  padding: 1%;
+  /* box-shadow: -0.25em -0.25em 0.5em #3d3d3f, 0.25em 0.25em 0.5em #3d3d3f; */
+  width: 50%;
+}
+
+/*
+.search_bar:hover > .search_text {
+  width: 50%;
+  padding: 0 5%;
+}
+
+.search_bar:hover > .search_button {
+  background: white;
+}
+
+*/
+
+.search_button {
+  color: rgba(255, 255, 255, 0.849);
+  float: right;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transition: 0.4s; */
+}
+
+.search_text {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  width: 95%;
+  /* transition: 0.4s; */
+  /* width: 0; */
+}
