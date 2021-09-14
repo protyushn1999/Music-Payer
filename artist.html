@@ -1,12 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/4284a63d5a.js" crossorigin="anonymous"></script>
+
+    <!--Title of the page-->
     <title>Artist-Page</title>
+
+    <!-- linked with fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <link rel="stylesheet" href="artist.css" />
 </head>
+
 <body>
-    artist page of music player
+    <!--SITE LAYOUT
+        Nav bar
+        -- >  logo  dropdown  search_bar  bell_icon  profile_image
+
+        Left aside
+        -- > one half (Home  Radio  Your_Library)
+        -- > second half (Liked_songs  List_of_playlists)
+
+        Main Content
+        -- > Artist image about
+        -- > Songs of the artist
+
+        Right Aside
+        -- > similar_artist Recently_played
+        
+        Plackback control
+-->
+    <!--Header of the artist page-->
+    <header>
+        <div class="header">
+            <div class="inner-head">
+                <div class="logo-container">
+                    <span id="logo-name"><b>Musically</b></span>
+                    <span id="logo-image"><img src="Assets\new logo.png" alt="Musically Logo" width="100px"
+                            height="100px" /></span>
+                </div>
+
+                <div class="search-bar">
+                    <form action="http://www.spotify.com">
+                        <input class="form-bar" type="text" name="searchMusic"
+                            placeholder="Artists, songs, or podcasts" />
+                        <a href="http://www.spotify.com" class="search_button">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </form>
+                    <div class="bell-icon">
+                        <span class="material-icons">notifications</span>
+                    </div>
+                </div>
+
+                <img id="profile-image" src="images\me.png" alt="profile image" />
+            </div>
+        </div>
+    </header>
+
+    <!--Ed Sheeran Artist Cover-->
+
+    <main class="content">
+
+
+        <div class="main-content">
+            <div class="left-aside">left-aside</div>
+
+            <div class="artist-main">
+                <div class="artist">
+                    <span class="artist-detail">Verified Artist </span>
+                    <span id="artist-name">
+                        <h2>Ed Sheeran</h2>
+                    </span>
+                    <span class="artist-detail"><b>76,67,782 </b> Monthly Listeners
+                    </span>
+                    <div class="play">
+                        <button id="play-button" type="submit">Play</button>
+                        <button type="submit">FOLLOWING </button>
+                    </div>
+                </div>
+
+                <div class="artist-queue">
+                   
+                </div>
+            </div>
+
+            <div class="right-aside">right-aside</div>
+        </div>
+
+
+    </main>
 </body>
+
 </html>
