@@ -105,6 +105,10 @@ align-items - align along the cross axis(used for all elements in that flexbox)
   width: 95%;
 }
 
+.main_page{
+  display:flex;
+  flex-direction: row;
+}
 /* CAROUSEL */
 
 input[type="radio"] {
@@ -120,7 +124,7 @@ input[type="radio"] {
 
   margin-top: 2%;
   margin-left: 15%;
-  width: fit-content;
+  width: 65%;
   height: 100%;
 }
 
@@ -128,7 +132,7 @@ input[type="radio"] {
   transition: transform 0.4s ease;
   cursor: pointer;
   position: absolute;
-  width: 70%;
+  width: 100%;
   height: 100%;
 }
 
@@ -142,7 +146,7 @@ input[type="radio"] {
 
 .cards img {
   max-height: 15rem;
-  width: 60%;
+  width: 70%;
 
   border-radius: 1em;
   object-fit: cover;
@@ -182,4 +186,62 @@ scaled to 0.8 times their original size */
 }
 img {
   box-shadow: 0 0 1% 0 rgba(81, 81, 81, 0.47);
+}
+
+/* My Queue */
+.queue{
+  
+  width:30%;
+  height:fit-content;
+  
+  padding:1em;
+  color:white;
+  
+}
+.queue_heading{
+  
+  font-weight: bold;
+  font-size:2rem;
+  margin-bottom:4%;
+}
+
+.queue_item{
+  /* max-height:1em; */
+  padding:0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-between;
+  margin-bottom:5%;
+  
+}
+
+.queue_number{
+  margin-right: 1em;
+  width:1em;
+}
+
+
+#queue_img{
+  max-height:3.5em;
+  max-width:3.5em;
+  margin-right:1em;
+
+}
+
+.queue_song{
+  margin-right:1em;
+  width:50%;
+  font-size: 0.85em;
+}
+
+.latest_releases{
+  border: 1px red solid;
+  width:60%;
+  height:40%;
+  position:absolute;
+  top:70vh;
+  z-index: 10;
+  margin-left:7.5%;
+  color: white;
 }
