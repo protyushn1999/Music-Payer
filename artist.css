@@ -254,12 +254,14 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 1em;
+    box-sizing: border-box;
 }
 .recently-played-first{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-left: -3em;
+    box-sizing: border-box;
 }
 #recently-played-img{
 padding: 0em 2em;
