@@ -1,170 +1,266 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;   
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
-/* 
-themes
-    height: 1000px;
-    width: 1000px;
-    background: rgb(186,157,191);
-    background: -moz-linear-gradient(201deg, rgba(186,157,191,1) 0%, rgba(3,2,20,1) 0%, rgba(25,17,85,1) 52%, rgba(186,157,191,1) 100%);
-    background: -webkit-linear-gradient(201deg, rgba(186,157,191,1) 0%, rgba(3,2,20,1) 0%, rgba(25,17,85,1) 52%, rgba(186,157,191,1) 100%);
-    background: linear-gradient(201deg, rgba(186,157,191,1) 0%, rgba(3,2,20,1) 0%, rgba(25,17,85,1) 52%, rgba(186,157,191,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ba9dbf",endColorstr="#ba9dbf",GradientType=1); 
-    overflow: hidden;
-    background: rgb(186,157,191);
-    background: -moz-linear-gradient(201deg, rgba(186,157,191,1) 0%, rgba(3,2,20,1) 0%, rgba(76,74,91,1) 50%, rgba(186,157,191,1) 100%);
-    background: -webkit-linear-gradient(201deg, rgba(186,157,191,1) 0%, rgba(3,2,20,1) 0%, rgba(76,74,91,1) 50%, rgba(186,157,191,1) 100%);
-    background: linear-gradient(201deg, rgba(186,157,191,1) 0%, rgba(3,2,20,1) 0%, rgba(76,74,91,1) 50%, rgba(186,157,191,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ba9dbf",endColorstr="#ba9dbf",GradientType=1);
-     */
-
-:root{
-  --bg-color : #0c1027;
+:root {
+  --bg-color: #0c1027;
 }
 
-body{
-    font-family: "DM Sans", sans-serif;
-    font-size: 1em;
-    background-color: var(--bg-color); 
-    box-sizing: border-box;
-    width: 100vw;
-    height: 100vh;
-    color: whitesmoke;
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1em;
+  background-color: var(--bg-color);
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  color: whitesmoke;
+  overflow-x: hidden;
 }
 
-.header{
-    height: 5rem;
-    width: auto;
-    color: white;
-    position: sticky;
-    margin-bottom: 1em;
-    
+.header {
+  height: 5rem;
+  width: auto;
+  color: white;
+  position: sticky;
+  margin-bottom: 1em;
 }
-.inner-head{
-    height: 5rem;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: nowrap;
+.inner-head {
+  height: 5rem;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
 }
-.logo-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#logo-name{
-    font-size: 1.5em;
+#logo-name {
+  font-size: 1.5em;
+  z-index: 1;
 }
-#logo-image{
-    transform: translateX(-1em);
+#logo-image {
+  transform: translateX(-0.3em);
+  z-index: 0;
 }
-.search-bar{
-    display: flex;
-    width: 600px;
-    justify-content: end;
+.search-bar {
+  display: flex;
+  width: 600px;
+  justify-content: end;
 }
-.search-bar .form-bar{
-    width: 350px;
-    height: 2.5em;
-    border: none;
-    border-radius: 25px;
-    padding-left: 1.5em;
-    flex-shrink: 3;
-    background-color: #151d46;
-    color: whitesmoke;
-    font-weight: 550;
-    font-size: 1em;
+.search-bar .form-bar {
+  width: 350px;
+  height: 2.5em;
+  border: none;
+  border-radius: 25px;
+  padding-left: 1.5em;
+  flex-shrink: 3;
+  background-color: #151d46;
+  color: whitesmoke;
+  font-weight: 550;
+  font-size: 1em;
 }
-.search-bar .form-bar:focus{
-    width: 600px;
-    border: none;
-    background-color: whitesmoke;
-    color: var(--bg-color);
+.search-bar .form-bar:focus {
+  width: 600px;
+  border: none;
+  background-color: whitesmoke;
+  color: var(--bg-color);
 }
-.search_button{
-    margin-left: -2.5em;
-    
+.search_button {
+  margin-left: -2.5em;
 }
-.fa-search{
-    color: rgb(204, 204, 204);
-    color: whitesmoke;
+.fa-search {
+  color: rgb(204, 204, 204);
+  color: whitesmoke;
 }
-.bell-icon{
-    margin-left: 2em;
-    align-self: center;
-
+.bell-icon {
+  margin-left: 2em;
+  align-self: center;
 }
-#profile-image{
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
+#profile-image {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
-
 
 /* Main content - Artist Page */
 
-.main-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-content: flex-end;
+  position: relative;
 }
-.artist-main{
-    
-    width: 60%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    justify-content: end;
+.artist-main {
+  width: 55%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-left: 1em;
+  
 }
-.artist{
-    background-image: url("https://wallpaperaccess.com/full/1352079.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 400px;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: end;
+.artist {
+  background-image: url("https://wallpaperaccess.com/full/1352079.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
 }
-#artist-name{
-    font-size: 3em;
-    font-weight: 900;
-    letter-spacing: -0.06em;
-    margin: 0;
-    line-height: 2em;
+#artist-name {
+  font-size: 3em;
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  margin: 0;
+  line-height: 2em;
 }
-.play{
-    margin-top: 2em;
-}
-#play-button{
-    padding: 1em;
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    background-color:#ff2768;
-    border: none;
-    
-}
-.artist-detail{
-    font-weight: normal;
-    font-size: 1.2rem;
+.artist-detail {
+  font-weight: normal;
+  font-size: 1.2rem;
 }
 
-.left-aside{
-    width: 15%;
-    border: 1px red solid;
+.play {
+  margin-top: 3em;
 }
-.right-aside{
-    width: 15%;
-    border: 1px red solid;
+.btn {
+  /* background-color: #ff2768;
+  background-color: #e0752d; */
+  background-color: #b9017a;
+  border: none;
+  border-radius: 50%;
+}
+.fa-play {
+  padding: 2em;
+  color: white;
+}
+.fa-play:hover {
+  background-color: whitesmoke;
+  color: #b9017a;
+  border-radius: 50%;
+  padding: 2em;
+}
+#follow {
+  margin-left: 2em;
+  padding: 0.5em 2em 0.5em 2em;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+}
+
+/* Artist Playlist */
+.artist-queue {
+  width: 100%;
+  padding: 1em;
+  background-image: linear-gradient(#055a5c, var(--bg-color));
+}
+.artist-song {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+.artist-song .first-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.artist-song .second-part {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
+}
+#first-part-img {
+  padding: 0 3em;
+}
+.likeplus {
+  padding: 1em;
+}
+
+/* Right Aside CSS */
+.left-aside {
+  width: 15%;
+  border: 1px red solid;
+  /* background-color: black; */
+  /* position: fixed;
+  left: 0;
+  height: 100vh; */
+}
+.right-aside {
+  width: 25%;
+  overflow-x: hidden;
+  height: 80vh;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  /* border: 1px red solid; */
+  padding-left: 1.5em;
+
+
+}
+.head {
+  margin-bottom: 1em;
+}
+.head-one {
+  font-size: 2em;
+  font-weight: bolder;
+}
+.head-two {
+  font-size: small;
+  font-weight: normal;
+}
+
+/* Similar Artists Song */
+.similar-artist {
+  margin-bottom: 2em;
+}
+.similar-artists-song {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-left: -1em;
+}
+.similar-artist-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.similar-artist-band {
+  font-size: 0.8em;
+}
+.recently-played{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.recently-played-first{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -3em;
+}
+#recently-played-img{
+padding: 0em 2em;
 }
