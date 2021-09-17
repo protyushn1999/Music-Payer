@@ -21,12 +21,12 @@
 <body>
     <!--SITE LAYOUT
     Header
-    Carousel                   Aside 
-    Latest Releases
-    Popular Artists
-    Music Genres
-    Latest English
-    Latest Hindi
+    Left-Aside          Carousel                   Right-Aside(Queue) 
+                        Latest Releases
+                        Popular Artists
+                        Music Genres
+                        Latest English
+                        Latest Hindi
     PLayback Controls (at bottom)
 -->
 
@@ -40,8 +40,8 @@
             <div class="search_bar">
                 <!--Changes to be made to search bar
                 1. Link it to the Artist Page once user presses enter key
-                2. Search bar tutorial from YouTube Channel 'DarkCode'
-                3. Responsive only till width of screen is 1024px - Needs to be fixed
+                2. Responsive only till width of screen is 1024px - Needs to be fixed
+                3. Change logo and fix width of search bar
                  -->
                 <input type="text" placeholder="Search" class="search_text">
                 <a href="#" class="search_button">
@@ -56,14 +56,33 @@
     </header>
 
     <!-- MAIN PAGE CONTENT -->
+    <div id="main_page">
+
+        <!--LEFT ASIDE : 15%-->
+        <div class="left_aside">
+            <h1>left aside</h1>
+            <h1>left aside</h1>
+            <h1>left aside</h1>
+            <h1>left aside</h1>
+            <h1>left aside</h1>
+            <h1>left aside</h1>
+            <h1>left aside</h1>
+            <h1>left aside</h1>
+            <h1>left aside</h1>
+            <h1>left aside</h1>
+            <h1>left aside</h1>
+            <h1>left aside</h1>
+            <h1>left aside</h1>
+            <h1>left aside</h1>
+            <h1>left aside</h1>
+            <h1>left aside</h1>
+        </div>
 
 
 
-
-    <div class="main_page">
-        <div class="left_aside"></div>
-        <!--CAROUSEL-->
+        <!--MAIN CONTENT : 60% -->
         <div class="main_content">
+
             <div class="carousel">
                 <input type="radio" name="slider" id="item-1">
                 <input type="radio" name="slider" id="item-2">
@@ -83,9 +102,22 @@
                     </label>
                 </div>
             </div>
+
+
             <div class="latest_releases">
                 <div class="body_heading">Latest Releases</div>
             </div>
+            <div class="latest_releases">
+                <div class="body_heading">Latest Releases</div>
+            </div>
+            <div class="latest_releases">
+                <div class="body_heading">Latest Releases</div>
+            </div>
+            <div class="latest_releases">
+                <div class="body_heading">Latest Releases</div>
+            </div>
+
+
         </div>
 
         <!-- My Queue
@@ -93,121 +125,119 @@
         Sr.No   Image   Name of song and Artist         Heart Button
         
         -->
+        <!-- QUEUE : 15% -->
         <div class="queue">
 
             <div class="queue_heading">Queue</div>
+            <div id="queue_contents">
+                <div class="queue_item">
+                    <span class="queue_number">01</span>
+                    <img src="images/icon1.png" alt="" id="queue_img">
+                    <span class="queue_song">
+                        <div class="queue_song_name"><b>Mirage</b></div>
+                        <div class="queue_song_artist">Else</div>
+                    </span>
+                    <span class="heart">
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
 
-            <div class="queue_item">
-                <span class="queue_number">01</span>
-                <img src="images/icon1.png" alt="" id="queue_img">
-                <span class="queue_song">
-                    <div class="queue_song_name"><b>Mirage</b></div>
-                    <div class="queue_song_artist">Else</div>
-                </span>
-                <span class="heart">
-                    <i class="far fa-heart"></i>
-                </span>
+                <div class="queue_item">
+                    <span class="queue_number">02</span>
+                    <img src="images/icon2.png" alt="" id="queue_img">
+                    <span class="queue_song">
+                        <div class="queue_song_name"><b>Worry Bout Us</b></div>
+                        <div class="queue_song_artist">Rosie Lowe</div>
+                    </span>
+                    <span class="heart">
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
+                <div class="queue_item">
+                    <span class="queue_number">03</span>
+                    <img src="images/icon3.png" alt="" id="queue_img">
+                    <span class="queue_song">
+                        <div class="queue_song_name"><b>New Skin</b></div>
+                        <div class="queue_song_artist">Flume</div>
+                    </span>
+                    <span class="heart">
+                        <i class="fas fa-heart"></i>
+                    </span>
+                </div>
+                <div class="queue_item">
+                    <span class="queue_number">04</span>
+                    <img src="images/icon1.png" alt="" id="queue_img">
+                    <span class="queue_song">
+                        <div class="queue_song_name"><b>Mirage</b></div>
+                        <div class="queue_song_artist">Else</div>
+                    </span>
+                    <span class="heart">
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
+
+                <div class="queue_item">
+                    <span class="queue_number">05</span>
+                    <img src="images/icon2.png" alt="" id="queue_img">
+                    <span class="queue_song">
+                        <div class="queue_song_name"><b>Worry Bout Us</b></div>
+                        <div class="queue_song_artist">Rosie Lowe</div>
+                    </span>
+                    <span class="heart">
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
+                <div class="queue_item">
+                    <span class="queue_number">06</span>
+                    <img src="images/icon3.png" alt="" id="queue_img">
+                    <span class="queue_song">
+                        <div class="queue_song_name"><b>New Skin</b></div>
+                        <div class="queue_song_artist">Flume</div>
+                    </span>
+                    <span class="heart">
+                        <i class="fas fa-heart"></i>
+                    </span>
+                </div>
+                <div class="queue_item">
+                    <span class="queue_number">07</span>
+                    <img src="images/icon1.png" alt="" id="queue_img">
+                    <span class="queue_song">
+                        <div class="queue_song_name"><b>Mirage</b></div>
+                        <div class="queue_song_artist">Else</div>
+                    </span>
+                    <span class="heart">
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
+
+                <div class="queue_item">
+                    <span class="queue_number">08</span>
+                    <img src="images/icon2.png" alt="" id="queue_img">
+                    <span class="queue_song">
+                        <div class="queue_song_name"><b>Worry Bout Us</b></div>
+                        <div class="queue_song_artist">Rosie Lowe</div>
+                    </span>
+                    <span class="heart">
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
+                <div class="queue_item">
+                    <span class="queue_number">09</span>
+                    <img src="images/icon3.png" alt="" id="queue_img">
+                    <span class="queue_song">
+                        <div class="queue_song_name"><b>New Skin</b></div>
+                        <div class="queue_song_artist">Flume</div>
+                    </span>
+                    <span class="heart">
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
             </div>
 
-            <div class="queue_item">
-                <span class="queue_number">02</span>
-                <img src="images/icon2.png" alt="" id="queue_img">
-                <span class="queue_song">
-                    <div class="queue_song_name"><b>Worry Bout Us</b></div>
-                    <div class="queue_song_artist">Rosie Lowe</div>
-                </span>
-                <span class="heart">
-                    <i class="far fa-heart"></i>
-                </span>
-            </div>
-            <div class="queue_item">
-                <span class="queue_number">03</span>
-                <img src="images/icon3.png" alt="" id="queue_img">
-                <span class="queue_song">
-                    <div class="queue_song_name"><b>New Skin</b></div>
-                    <div class="queue_song_artist">Flume</div>
-                </span>
-                <span class="heart">
-                    <i class="fas fa-heart"></i>
-                </span>
-            </div>
-            <div class="queue_item">
-                <span class="queue_number">04</span>
-                <img src="images/icon1.png" alt="" id="queue_img">
-                <span class="queue_song">
-                    <div class="queue_song_name"><b>Mirage</b></div>
-                    <div class="queue_song_artist">Else</div>
-                </span>
-                <span class="heart">
-                    <i class="far fa-heart"></i>
-                </span>
-            </div>
-
-            <div class="queue_item">
-                <span class="queue_number">05</span>
-                <img src="images/icon2.png" alt="" id="queue_img">
-                <span class="queue_song">
-                    <div class="queue_song_name"><b>Worry Bout Us</b></div>
-                    <div class="queue_song_artist">Rosie Lowe</div>
-                </span>
-                <span class="heart">
-                    <i class="far fa-heart"></i>
-                </span>
-            </div>
-            <div class="queue_item">
-                <span class="queue_number">06</span>
-                <img src="images/icon3.png" alt="" id="queue_img">
-                <span class="queue_song">
-                    <div class="queue_song_name"><b>New Skin</b></div>
-                    <div class="queue_song_artist">Flume</div>
-                </span>
-                <span class="heart">
-                    <i class="fas fa-heart"></i>
-                </span>
-            </div>
-            <div class="queue_item">
-                <span class="queue_number">07</span>
-                <img src="images/icon1.png" alt="" id="queue_img">
-                <span class="queue_song">
-                    <div class="queue_song_name"><b>Mirage</b></div>
-                    <div class="queue_song_artist">Else</div>
-                </span>
-                <span class="heart">
-                    <i class="far fa-heart"></i>
-                </span>
-            </div>
-
-            <div class="queue_item">
-                <span class="queue_number">08</span>
-                <img src="images/icon2.png" alt="" id="queue_img">
-                <span class="queue_song">
-                    <div class="queue_song_name"><b>Worry Bout Us</b></div>
-                    <div class="queue_song_artist">Rosie Lowe</div>
-                </span>
-                <span class="heart">
-                    <i class="far fa-heart"></i>
-                </span>
-            </div>
-            <div class="queue_item">
-                <span class="queue_number">09</span>
-                <img src="images/icon3.png" alt="" id="queue_img">
-                <span class="queue_song">
-                    <div class="queue_song_name"><b>New Skin</b></div>
-                    <div class="queue_song_artist">Flume</div>
-                </span>
-                <span class="heart">
-                    <i class="far fa-heart"></i>
-                </span>
-            </div>
 
         </div>
 
     </div>
-
-
-
-
-
 
 </body>
 
