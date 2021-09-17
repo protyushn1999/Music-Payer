@@ -18,6 +18,7 @@
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="artist.css" />
 </head>
@@ -43,13 +44,15 @@
     <!--Left Aside of the artist page - fixed-->
     <!-- <div class="left-aside">left-aside</div> -->
     <!--Header of the artist page-->
+
+    
     <header>
         <div class="header">
             <div class="inner-head">
                 <div class="logo-container">
-                    <span id="logo-name"><b>Tuneegy</b></span>
-                    <span id="logo-image"><img src="Assets\Layer 4.png" alt="Musically Logo" width="75px" height="75px"
-                             /></span>
+                    <span id="logo-name"><b>Tunify </b></span>
+                    <span id="logo-image"><img src="Assets\Layer 4.png" alt="Musically Logo" width="75px"
+                            height="75px" /></span>
                 </div>
 
                 <div class="search-bar">
@@ -71,10 +74,65 @@
     </header>
 
     <!--Ed Sheeran Artist Cover-->
+    
+    <div class="left-aside">
+        <div class="left">
+            <div class="left-btns">
+                <!-- will contain home, search, radio, for you button -->    
+                <ul class="link-btn">
+                    <li>
+                        <a href="http://www.google.com">
+                            <span class ="left-icon"><i class="large material-icons">home</i></i></span>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="homepage">
+                            <span class ="left-icon"><i class="large material-icons">radio</i></span>
+                            
+                            <span>Radio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="homepage">
+                            <span class ="left-icon"><i class="large material-icons">library_music</i></span>
+                            <span>Your Library</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <br>
+            <div class="left-playlist">
+                <!-- create playlist and liked playlist -->
+                <button class="create-playist">
+                    <span class ="left-icon"><i class="large material-icons ">add</i></span>
+                    <span class ="left-icon">Create Playlist</span>
+                </button>
+                <button class="create-playist">
+                    <span class ="left-icon"><i class="large material-icons">favorite</i></span>
+                    <span class ="left-icon">Liked Songs</span>
+                </button>
+            </div>
+            <div class="left-list">
+                list of all playlists created
+                dard ek dil
+
+            </div>
+        </div>
+
+    </div>
+    <!-- </div> -->
+
 
     <main class="content">
+
+        <!-- Main singer page with songs list-->
         <div class="main-content">
-            <div class="left-aside">left-aside</div>
+            <!-- <div class="left-aside">left-aside</div> -->
+
+
+
             <div class="artist-main">
                 <div class="artist">
                     <span class="artist-detail">Verified Artist </span>
@@ -191,7 +249,10 @@
                     </div>
                 </div>
             </div>
+
+            <!--Right Aside which will contain  similar songs and recently played songs-->
             <div class="right-aside">
+                <!--Similar songs-->
                 <div class="similar-artist">
                     <div class="head">
                         <span class="head-one">Similar Songs</span>
@@ -347,7 +408,9 @@
                 </div>
             </div>
         </div>
+        
     </main>
+    
 </body>
 
 </html>
