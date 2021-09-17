@@ -6,6 +6,7 @@
 }
 :root {
   --bg-color: #0c1027;
+  --light-color: #151d46;
 }
 
 body {
@@ -18,7 +19,9 @@ body {
   color: whitesmoke;
   overflow-x: hidden;
 }
-
+a{
+  text-decoration: none;
+}
 .header {
   height: 5rem;
   width: auto;
@@ -35,17 +38,18 @@ body {
   align-items: center;
   flex-wrap: nowrap;
 }
+
 .logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #logo-name {
-  font-size: 1.5em;
+  font-size: 2em;
   z-index: 1;
 }
 #logo-image {
-  transform: translateX(-0.3em);
+  /* transform: translateX(-0.3em); */
   z-index: 0;
 }
 .search-bar {
@@ -98,7 +102,7 @@ body {
   position: relative;
 }
 .artist-main {
-  width: 55%;
+  width: 60%;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -107,6 +111,8 @@ body {
   flex-wrap: wrap;
   justify-content: start;
   margin-left: 1em;
+  box-sizing: border-box;
+  padding: 0px 64px;
   
 }
 .artist {
@@ -116,12 +122,13 @@ body {
   width: 100%;
   height: 400px;
   box-sizing: border-box;
-  padding-left: 1rem;
-  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: end;
+  
 }
 #artist-name {
   font-size: 3em;
@@ -199,22 +206,17 @@ body {
 }
 
 /* Right Aside CSS */
-.left-aside {
-  width: 15%;
-  border: 1px red solid;
-  /* background-color: black; */
-  /* position: fixed;
-  left: 0;
-  height: 100vh; */
-}
+
 .right-aside {
-  width: 25%;
+  width: 20%;
   overflow-x: hidden;
   height: 80vh;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   /* border: 1px red solid; */
-  padding-left: 1.5em;
+  box-sizing: border-box;
+  margin-right: 2em;
+  
 
 
 }
@@ -265,4 +267,63 @@ body {
 }
 #recently-played-img{
 padding: 0em 2em;
+}
+
+
+/* left aside css */
+.left-aside {
+  width: 20%;
+  /* border: 1px red solid; */
+  /* background-color: var(--light-color); */
+  height: 80vh;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 1;
+  padding: 1em;
+  
+}
+.left{
+  display: block;
+}
+.link-btn a{
+  text-decoration: none;
+  color: white;
+  padding-top: 1em;
+}
+.link-btn li:hover{
+  background-color: var(--light-color);
+  border-radius: 5px;
+}
+
+.left-icon{
+  
+  padding: 1em;
+}
+.link-btn .material-icons{
+  width: 2em;
+  height: 2em;
+  padding-top: 0.5em;
+}
+.left-playlist{
+  display: block;
+  /* padding-top: 1em;
+  padding-bottom: 1em; */
+}
+.create-playist{
+  display: block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: var(--bg-color);
+  color: whitesmoke;
+  border: none;
+  font-size: 1em;
+  width:100%;
+  text-align: left;
+  
+}
+.create-playist:hover{
+  background-color: var(--light-color);
+  border-radius: 5px;
 }
