@@ -172,7 +172,7 @@ align-items - align along the cross axis(used for all elements in that flexbox)
   max-width: 60vw;
   height: 100%;
   margin-left: 16vw;
-  padding:1em 5em 1em 2em;
+  padding:1em 4em 1em 1em;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -244,6 +244,7 @@ align-items - align along the cross axis(used for all elements in that flexbox)
   flex-wrap: wrap;
   margin-bottom: 5em;
 }
+
 .artist-song {
   display: flex;
   flex-direction: row;
@@ -251,6 +252,9 @@ align-items - align along the cross axis(used for all elements in that flexbox)
   padding: 0.5em;
   flex-shrink: 1;
   flex-wrap: wrap;
+}
+.artist-song:hover{
+  color: #c1c1c1;
 }
 .artist-song .first-part {
   display: flex;
@@ -309,13 +313,18 @@ align-items - align along the cross axis(used for all elements in that flexbox)
 /* Similar Artists Song */
 .similar-artist {
   margin-bottom: 2em;
+  
 }
 .similar-artists-song {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 10px;
-  margin-left: -1em;
+  padding: 0.8em;
+  margin-right: 1em;
+}
+.similar-artists-song:hover{
+  background-color: var(--light-color);
+  border-radius: 5px;
 }
 .similar-artist-name {
   display: flex;
@@ -329,8 +338,13 @@ align-items - align along the cross axis(used for all elements in that flexbox)
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 1em;
+    margin: 0em 1em 1em 0em;
+    padding: 0.8em;
     box-sizing: border-box;
+}
+.recently-played:hover{
+  background-color: var(--light-color);
+  border-radius: 5px;
 }
 .recently-played-first{
     display: flex;
@@ -351,4 +365,13 @@ padding: 0em 2em;
   height: 5em;
   background-color: rgb(226, 10, 255);
   width: 100%;
+}
+
+.inner-control{
+  display: flex;
+  width: 80%;
+}
+.control-song{
+  display: flex;
+  align-items: center;
 }
