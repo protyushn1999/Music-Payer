@@ -25,36 +25,40 @@
 
 <body>
     <!--SITE LAYOUT
-        Nav bar
-        -- >  logo  dropdown  search_bar  bell_icon  profile_image
 
-        Left aside
-        -- > one half (Home  Radio  Your_Library)
-        -- > second half (Liked_songs  List_of_playlists)
+        HEADER AND NAV BAR
+        logo    Search_bar     Bell_icon      Profile_image
 
-        Main Content
-        -- > Artist image about
-        -- > Songs of the artist
+        MAIN CONTENT
 
-        Right Aside
-        -- > similar_artist Recently_played
+        Left Aside              Artist Details                  Right ASide
         
-        Plackback control
--->
-    <!--Left Aside of the artist page - fixed-->
-    <!-- <div class="left-aside">left-aside</div> -->
-    <!--Header of the artist page-->
+        one half                1.Artist image about            1.Similar Songs
+        1.Home                  2.Songs of the artist           2.Recently Played
+        2.Radio  
+        3.Your_Library
 
-    
+        second half
+        1.Liked_songs
+        2.Create Playlist
+        3.List_of_playlists)
+        
+        FOOTER AND PLAYBACK CONTROLS
+-->
+
+<!-- HEADER AND NAV BAR -->
     <header>
         <div class="header">
             <div class="inner-head">
+                
+                <!-- Logo and Tunify -->
                 <div class="logo-container">
+                    <span id="logo-image"><img src="Assets\Layer 4.png" alt="Musically Logo" width="70px"
+                            height="70px" /></span>
                     <span id="logo-name"><b>Tunify </b></span>
-                    <span id="logo-image"><img src="Assets\Layer 4.png" alt="Musically Logo" width="75px"
-                            height="75px" /></span>
                 </div>
 
+                <!-- Search Bar -->
                 <div class="search-bar">
                     <form action="http://www.spotify.com">
                         <input class="form-bar" type="text" name="searchMusic"
@@ -67,350 +71,345 @@
                         <span class="material-icons">notifications</span>
                     </div>
                 </div>
-
+                <!-- Profile Picture -->
                 <img id="profile-image" src="images\me.png" alt="profile image" />
             </div>
         </div>
     </header>
 
-    <!--Ed Sheeran Artist Cover-->
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main-content" id="div1">
     
-    <div class="left-aside">
-        <div class="left">
-            <div class="left-btns">
-                <!-- will contain home, search, radio, for you button -->    
-                <ul class="link-btn">
-                    <li>
-                        <a href="http://www.google.com">
-                            <span class ="left-icon"><i class="large material-icons">home</i></i></span>
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="homepage">
-                            <span class ="left-icon"><i class="large material-icons">radio</i></span>
-                            
-                            <span>Radio</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="homepage">
-                            <span class ="left-icon"><i class="large material-icons">library_music</i></span>
-                            <span>Your Library</span>
-                        </a>
-                    </li>
+        <!-- Left Aside will contain navigation btn like home radio explore with button for creating playlists -->
+        <div class="left-aside">
+            <div class="left">
+                <div class="left-btns">
+                    <!-- will contain home, search, radio, for you button -->
+                    <ul class="link-btn">
+                        <li>
+                            <a href="http://www.google.com">
+                                <span class="left-icon"><i class="large material-icons">home</i></i></span>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="homepage">
+                                <span class="left-icon"><i class="large material-icons">radio</i></span>
 
-                </ul>
-            </div>
-            <br>
-            <div class="left-playlist">
-                <!-- create playlist and liked playlist -->
-                <button class="create-playist">
-                    <span class ="left-icon"><i class="large material-icons ">add</i></span>
-                    <span class ="left-icon">Create Playlist</span>
-                </button>
-                <button class="create-playist">
-                    <span class ="left-icon"><i class="large material-icons">favorite</i></span>
-                    <span class ="left-icon">Liked Songs</span>
-                </button>
-            </div>
-            <div class="left-list">
-                list of all playlists created
-                dard ek dil
+                                <span>Radio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="homepage">
+                                <span class="left-icon"><i class="large material-icons">library_music</i></span>
+                                <span>Your Library</span>
+                            </a>
+                        </li>
 
+                    </ul>
+                </div>
+
+                <div class="left-playlist">
+                    <!-- create playlist and liked playlist -->
+                    <button class="create-playist">
+                        <span class="left-icon"><i class="large material-icons ">add</i></span>
+                        <span class="left-icon">Create Playlist</span>
+                    </button>
+                    <button class="create-playist">
+                        <span class="left-icon"><i class="large material-icons">favorite</i></span>
+                        <span class="left-icon">Liked Songs</span>
+                    </button>
+                </div>
+                <div class="left-list">
+                    list of all playlists created
+                    dard ek dil
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--Ed Sheeran Artist Cover-->
+        <div class="artist-main">
+            <!-- Verified Artist and Artist Hero Page with play and follow buttons-->
+            <div class="artist">
+                <span class="artist-detail">Verified Artist </span>
+                <span id="artist-name">
+                    <h2>Ed Sheeran</h2>
+                </span>
+                <span class="artist-detail"><b>76,67,782 </b> Monthly Listeners
+                </span>
+
+                <div class="play">
+                    <button class="btn"><i class="fas fa-play"></i></button>
+                    <button type="submit" id="follow">FOLLOWING</button>
+                </div>
+            </div>
+
+            <!--Songs of the above artists in a queue wiht like and add to playlist btns-->
+            <div class="artist-queue">
+                <div class="artist-song">
+                    <div class="first-part">
+                        <span>1</span>
+                        <span><img src="https://i.scdn.co/image/ab67616d0000b273469407300636945a5eb2d9ed" alt=""
+                                id="first-part-img" width="50px" /></span>
+                        <span>Bad Habbits</span>
+                    </div>
+                    <div class="second-part">
+                        <span class="material-icons likeplus">favorite_border</span>
+                        <span class="material-icons likeplus">add</span>
+                    </div>
+                </div>
+                <div class="artist-song">
+                    <div class="first-part">
+                        <span>2</span>
+                        <span><img src="https://i.scdn.co/image/ab67616d0000b273ba5db46f4b838ef6027e6f96" alt=""
+                                id="first-part-img" width="50px" /></span>
+                        <span>Perfect</span>
+                    </div>
+                    <div class="second-part">
+                        <span class="material-icons likeplus">favorite_border</span>
+                        <span class="material-icons likeplus">add</span>
+                    </div>
+                </div>
+                <div class="artist-song">
+                    <div class="first-part">
+                        <span>3</span>
+                        <span><img src="https://lite-images-i.scdn.co/image/ab67616d00001e0213b3e37318a0c247b550bccd"
+                                alt="" id="first-part-img" width="50px" /></span>
+                        <span>Perfect</span>
+                    </div>
+                    <div class="second-part">
+                        <span class="material-icons likeplus">favorite_border</span>
+                        <span class="material-icons likeplus">add</span>
+                    </div>
+                </div>
+                <div class="artist-song">
+                    <div class="first-part">
+                        <span>4</span>
+                        <span><img src="https://i.scdn.co/image/ab67616d0000b2734e5aa948f072c47d359228af" alt=""
+                                id="first-part-img" width="50px" /></span>
+                        <span>Perfect</span>
+                    </div>
+                    <div class="second-part">
+                        <span class="material-icons likeplus">favorite_border</span>
+                        <span class="material-icons likeplus">add</span>
+                    </div>
+                </div>
+                <div class="artist-song">
+                    <div class="first-part">
+                        <span>5</span>
+                        <span><img src="https://i.scdn.co/image/ab67616d0000b273469407300636945a5eb2d9ed" alt=""
+                                id="first-part-img" width="50px" /></span>
+                        <span>Bad Habbits</span>
+                    </div>
+                    <div class="second-part">
+                        <span class="material-icons likeplus">favorite_border</span>
+                        <span class="material-icons likeplus">add</span>
+                    </div>
+                </div>
+                <div class="artist-song">
+                    <div class="first-part">
+                        <span>6</span>
+                        <span><img src="https://i.scdn.co/image/ab67616d0000b273ba5db46f4b838ef6027e6f96" alt=""
+                                id="first-part-img" width="50px" /></span>
+                        <span>Perfect</span>
+                    </div>
+                    <div class="second-part">
+                        <span class="material-icons likeplus">favorite_border</span>
+                        <span class="material-icons likeplus">add</span>
+                    </div>
+                </div>
+                <div class="artist-song">
+                    <div class="first-part">
+                        <span>7</span>
+                        <span><img src="https://lite-images-i.scdn.co/image/ab67616d00001e0213b3e37318a0c247b550bccd"
+                                alt="" id="first-part-img" width="50px" /></span>
+                        <span>Perfect</span>
+                    </div>
+                    <div class="second-part">
+                        <span class="material-icons likeplus">favorite_border</span>
+                        <span class="material-icons likeplus">add</span>
+                    </div>
+                </div>
+                <div class="artist-song">
+                    <div class="first-part">
+                        <span>8</span>
+                        <span><img src="https://i.scdn.co/image/ab67616d0000b2734e5aa948f072c47d359228af" alt=""
+                                id="first-part-img" width="50px" /></span>
+                        <span>Perfect</span>
+                    </div>
+                    <div class="second-part">
+                        <span class="material-icons likeplus">favorite_border</span>
+                        <span class="material-icons likeplus">add</span>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!--Right Aside which will contain  similar songs and recently played songs-->
+        <div class="right-aside">
+            <!--Similar songs Queue-->
+            <div class="similar-artist">
+                <div class="head">
+                    <span class="head-one">Similar Songs</span>
+                    <span class="head-two">view all</span>
+                </div>
+                <div class="similar-artists-song">
+                    <span><img src="https://pbs.twimg.com/media/C_Wzg_LVwAIpGsc.jpg" alt="" id="similarsong"
+                            width="80px" /></span>
+                    <div class="similar-artist-name">
+                        <span><b>Believer</b></span>
+                        <span class="similar-artist-band">Imagine Dragons</span>
+                    </div>
+                    <span id="time">4.44</span>
+                </div>
+                <div class="similar-artists-song">
+                    <span><img
+                            src="https://upload.wikimedia.org/wikipedia/en/e/e5/Coldplay%2C_Hymn_for_the_Weekend%2C_Artwork.jpg"
+                            alt="" id="similarsong" width="80px" /></span>
+                    <div class="similar-artist-name">
+                        <span><b>Paradise</b></span>
+                        <span class="similar-artist-band">Imagine Dragons</span>
+                    </div>
+                    <span id="time">4.44</span>
+                </div>
+                <div class="similar-artists-song">
+                    <span><img
+                            src="https://etcanada.com/wp-content/uploads/2017/11/rockperformance-imaginedragons.jpg?quality=80&strip=all"
+                            alt="" id="similarsong" width="80px" /></span>
+                    <div class="similar-artist-name">
+                        <span><b>Believer</b></span>
+                        <span class="similar-artist-band">Imagine Dragons</span>
+                    </div>
+                    <span id="time">4.44</span>
+                </div>
+                <div class="similar-artists-song">
+                    <span><img
+                            src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/02/13/15/bieber-1.jpg?width=982&height=726&auto=webp&quality=75"
+                            alt="" id="similarsong" width="80px" /></span>
+                    <div class="similar-artist-name">
+                        <span><b>Intensions</b></span>
+                        <span class="similar-artist-band">Imagine Dragons</span>
+                    </div>
+                    <span id="time">4.44</span>
+                </div>
+                <div class="similar-artists-song">
+                    <span><img src="https://pbs.twimg.com/media/C_Wzg_LVwAIpGsc.jpg" alt="" id="similarsong"
+                            width="80px" /></span>
+                    <div class="similar-artist-name">
+                        <span><b>Believer</b></span>
+                        <span class="similar-artist-band">Imagine Dragons</span>
+                    </div>
+                    <span id="time">4.44</span>
+                </div>
+                <div class="similar-artists-song">
+                    <span><img
+                            src="https://upload.wikimedia.org/wikipedia/en/e/e5/Coldplay%2C_Hymn_for_the_Weekend%2C_Artwork.jpg"
+                            alt="" id="similarsong" width="80px" /></span>
+                    <div class="similar-artist-name">
+                        <span><b>Paradise</b></span>
+                        <span class="similar-artist-band">Imagine Dragons</span>
+                    </div>
+                    <span id="time">4.44</span>
+                </div>
+                <div class="similar-artists-song">
+                    <span><img
+                            src="https://etcanada.com/wp-content/uploads/2017/11/rockperformance-imaginedragons.jpg?quality=80&strip=all"
+                            alt="" id="similarsong" width="80px" /></span>
+                    <div class="similar-artist-name">
+                        <span><b>Believer</b></span>
+                        <span class="similar-artist-band">Imagine Dragons</span>
+                    </div>
+                    <span id="time">4.44</span>
+                </div>
+                <div class="similar-artists-song">
+                    <span><img
+                            src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/02/13/15/bieber-1.jpg?width=982&height=726&auto=webp&quality=75"
+                            alt="" id="similarsong" width="80px" /></span>
+                    <div class="similar-artist-name">
+                        <span><b>Believer</b></span>
+                        <span class="similar-artist-band">Imagine Dragons</span>
+                    </div>
+                    <span id="time">4.44</span>
+                </div>
+            </div>
+
+            <!--Recent Items Queue-->
+
+            <div class="recent-items">
+                <div class="head">
+                    <span class="head-one">Recently played</span>
+                    <span class="head-two">view all</span>
+                </div>
+                <div class="recently-played">
+                    <div class="recently-played-first">
+                        <span>1</span>
+                        <span><img src="https://lite-images-i.scdn.co/image/ab67616d00001e0213b3e37318a0c247b550bccd"
+                                alt="" id="recently-played-img" width="50px" /></span>
+                        <span>Perfect</span>
+                    </div>
+                    <div>
+                        <span class="material-icons">favorite_border</span>
+                    </div>
+                </div>
+                <div class="recently-played">
+                    <div class="recently-played-first">
+                        <span>2</span>
+                        <span><img
+                                src="https://i0.wp.com/geetsongs.com/wp-content/uploads/2021/04/images-2021-04-21T210313.148.jpeg?resize=500%2C500&ssl=1"
+                                alt="" id="recently-played-img" width="50px" /></span>
+                        <span>Aurora</span>
+                    </div>
+                    <div>
+                        <span class="material-icons">favorite_border</span>
+                    </div>
+                </div>
+                <div class="recently-played">
+                    <div class="recently-played-first">
+                        <span>4</span>
+                        <span><img src="https://lite-images-i.scdn.co/image/ab67616d00001e0213b3e37318a0c247b550bccd"
+                                alt="" id="recently-played-img" width="50px" /></span>
+                        <span>Perfect</span>
+                    </div>
+                    <div>
+                        <span class="material-icons">favorite_border</span>
+                    </div>
+                </div>
+                <div class="recently-played">
+                    <div class="recently-played-first">
+                        <span>5</span>
+                        <span><img
+                                src="https://i0.wp.com/geetsongs.com/wp-content/uploads/2021/04/images-2021-04-21T210313.148.jpeg?resize=500%2C500&ssl=1"
+                                alt="" id="recently-played-img" width="50px" /></span>
+                        <span>Aurora</span>
+                    </div>
+                    <div>
+                        <span class="material-icons">favorite_border</span>
+                    </div>
+                </div>
+                <div class="recently-played">
+                    <div class="recently-played-first">
+                        <span>7</span>
+                        <span><img src="https://lite-images-i.scdn.co/image/ab67616d00001e0213b3e37318a0c247b550bccd"
+                                alt="" id="recently-played-img" width="50px" /></span>
+                        <span>Perfect</span>
+                    </div>
+                    <div>
+                        <span class="material-icons">favorite_border</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- </div> -->
 
+    <footer class="control">
 
-    <main class="content">
+        ram
+    </footer>
 
-        <!-- Main singer page with songs list-->
-        <div class="main-content">
-            <!-- <div class="left-aside">left-aside</div> -->
-
-
-
-            <div class="artist-main">
-                <div class="artist">
-                    <span class="artist-detail">Verified Artist </span>
-                    <span id="artist-name">
-                        <h2>Ed Sheeran</h2>
-                    </span>
-                    <span class="artist-detail"><b>76,67,782 </b> Monthly Listeners
-                    </span>
-
-                    <div class="play">
-                        <button class="btn"><i class="fas fa-play"></i></button>
-                        <button type="submit" id="follow">FOLLOWING</button>
-                    </div>
-                </div>
-
-                <div class="artist-queue">
-                    <div class="artist-song">
-                        <div class="first-part">
-                            <span>1</span>
-                            <span><img src="https://i.scdn.co/image/ab67616d0000b273469407300636945a5eb2d9ed" alt=""
-                                    id="first-part-img" width="50px" /></span>
-                            <span>Bad Habbits</span>
-                        </div>
-                        <div class="second-part">
-                            <span class="material-icons likeplus">favorite_border</span>
-                            <span class="material-icons likeplus">add</span>
-                        </div>
-                    </div>
-                    <div class="artist-song">
-                        <div class="first-part">
-                            <span>2</span>
-                            <span><img src="https://i.scdn.co/image/ab67616d0000b273ba5db46f4b838ef6027e6f96" alt=""
-                                    id="first-part-img" width="50px" /></span>
-                            <span>Perfect</span>
-                        </div>
-                        <div class="second-part">
-                            <span class="material-icons likeplus">favorite_border</span>
-                            <span class="material-icons likeplus">add</span>
-                        </div>
-                    </div>
-                    <div class="artist-song">
-                        <div class="first-part">
-                            <span>3</span>
-                            <span><img
-                                    src="https://lite-images-i.scdn.co/image/ab67616d00001e0213b3e37318a0c247b550bccd"
-                                    alt="" id="first-part-img" width="50px" /></span>
-                            <span>Perfect</span>
-                        </div>
-                        <div class="second-part">
-                            <span class="material-icons likeplus">favorite_border</span>
-                            <span class="material-icons likeplus">add</span>
-                        </div>
-                    </div>
-                    <div class="artist-song">
-                        <div class="first-part">
-                            <span>4</span>
-                            <span><img src="https://i.scdn.co/image/ab67616d0000b2734e5aa948f072c47d359228af" alt=""
-                                    id="first-part-img" width="50px" /></span>
-                            <span>Perfect</span>
-                        </div>
-                        <div class="second-part">
-                            <span class="material-icons likeplus">favorite_border</span>
-                            <span class="material-icons likeplus">add</span>
-                        </div>
-                    </div>
-                    <div class="artist-song">
-                        <div class="first-part">
-                            <span>5</span>
-                            <span><img src="https://i.scdn.co/image/ab67616d0000b273469407300636945a5eb2d9ed" alt=""
-                                    id="first-part-img" width="50px" /></span>
-                            <span>Bad Habbits</span>
-                        </div>
-                        <div class="second-part">
-                            <span class="material-icons likeplus">favorite_border</span>
-                            <span class="material-icons likeplus">add</span>
-                        </div>
-                    </div>
-                    <div class="artist-song">
-                        <div class="first-part">
-                            <span>6</span>
-                            <span><img src="https://i.scdn.co/image/ab67616d0000b273ba5db46f4b838ef6027e6f96" alt=""
-                                    id="first-part-img" width="50px" /></span>
-                            <span>Perfect</span>
-                        </div>
-                        <div class="second-part">
-                            <span class="material-icons likeplus">favorite_border</span>
-                            <span class="material-icons likeplus">add</span>
-                        </div>
-                    </div>
-                    <div class="artist-song">
-                        <div class="first-part">
-                            <span>7</span>
-                            <span><img
-                                    src="https://lite-images-i.scdn.co/image/ab67616d00001e0213b3e37318a0c247b550bccd"
-                                    alt="" id="first-part-img" width="50px" /></span>
-                            <span>Perfect</span>
-                        </div>
-                        <div class="second-part">
-                            <span class="material-icons likeplus">favorite_border</span>
-                            <span class="material-icons likeplus">add</span>
-                        </div>
-                    </div>
-                    <div class="artist-song">
-                        <div class="first-part">
-                            <span>8</span>
-                            <span><img src="https://i.scdn.co/image/ab67616d0000b2734e5aa948f072c47d359228af" alt=""
-                                    id="first-part-img" width="50px" /></span>
-                            <span>Perfect</span>
-                        </div>
-                        <div class="second-part">
-                            <span class="material-icons likeplus">favorite_border</span>
-                            <span class="material-icons likeplus">add</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--Right Aside which will contain  similar songs and recently played songs-->
-            <div class="right-aside">
-                <!--Similar songs-->
-                <div class="similar-artist">
-                    <div class="head">
-                        <span class="head-one">Similar Songs</span>
-                        <span class="head-two">view all</span>
-                    </div>
-                    <div class="similar-artists-song">
-                        <span><img src="https://pbs.twimg.com/media/C_Wzg_LVwAIpGsc.jpg" alt="" id="similarsong"
-                                width="80px" /></span>
-                        <div class="similar-artist-name">
-                            <span><b>Believer</b></span>
-                            <span class="similar-artist-band">Imagine Dragons</span>
-                        </div>
-                        <span id="time">4.44</span>
-                    </div>
-                    <div class="similar-artists-song">
-                        <span><img
-                                src="https://upload.wikimedia.org/wikipedia/en/e/e5/Coldplay%2C_Hymn_for_the_Weekend%2C_Artwork.jpg"
-                                alt="" id="similarsong" width="80px" /></span>
-                        <div class="similar-artist-name">
-                            <span><b>Paradise</b></span>
-                            <span class="similar-artist-band">Imagine Dragons</span>
-                        </div>
-                        <span id="time">4.44</span>
-                    </div>
-                    <div class="similar-artists-song">
-                        <span><img
-                                src="https://etcanada.com/wp-content/uploads/2017/11/rockperformance-imaginedragons.jpg?quality=80&strip=all"
-                                alt="" id="similarsong" width="80px" /></span>
-                        <div class="similar-artist-name">
-                            <span><b>Believer</b></span>
-                            <span class="similar-artist-band">Imagine Dragons</span>
-                        </div>
-                        <span id="time">4.44</span>
-                    </div>
-                    <div class="similar-artists-song">
-                        <span><img
-                                src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/02/13/15/bieber-1.jpg?width=982&height=726&auto=webp&quality=75"
-                                alt="" id="similarsong" width="80px" /></span>
-                        <div class="similar-artist-name">
-                            <span><b>Intensions</b></span>
-                            <span class="similar-artist-band">Imagine Dragons</span>
-                        </div>
-                        <span id="time">4.44</span>
-                    </div>
-                    <div class="similar-artists-song">
-                        <span><img src="https://pbs.twimg.com/media/C_Wzg_LVwAIpGsc.jpg" alt="" id="similarsong"
-                                width="80px" /></span>
-                        <div class="similar-artist-name">
-                            <span><b>Believer</b></span>
-                            <span class="similar-artist-band">Imagine Dragons</span>
-                        </div>
-                        <span id="time">4.44</span>
-                    </div>
-                    <div class="similar-artists-song">
-                        <span><img
-                                src="https://upload.wikimedia.org/wikipedia/en/e/e5/Coldplay%2C_Hymn_for_the_Weekend%2C_Artwork.jpg"
-                                alt="" id="similarsong" width="80px" /></span>
-                        <div class="similar-artist-name">
-                            <span><b>Paradise</b></span>
-                            <span class="similar-artist-band">Imagine Dragons</span>
-                        </div>
-                        <span id="time">4.44</span>
-                    </div>
-                    <div class="similar-artists-song">
-                        <span><img
-                                src="https://etcanada.com/wp-content/uploads/2017/11/rockperformance-imaginedragons.jpg?quality=80&strip=all"
-                                alt="" id="similarsong" width="80px" /></span>
-                        <div class="similar-artist-name">
-                            <span><b>Believer</b></span>
-                            <span class="similar-artist-band">Imagine Dragons</span>
-                        </div>
-                        <span id="time">4.44</span>
-                    </div>
-                    <div class="similar-artists-song">
-                        <span><img
-                                src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/02/13/15/bieber-1.jpg?width=982&height=726&auto=webp&quality=75"
-                                alt="" id="similarsong" width="80px" /></span>
-                        <div class="similar-artist-name">
-                            <span><b>Believer</b></span>
-                            <span class="similar-artist-band">Imagine Dragons</span>
-                        </div>
-                        <span id="time">4.44</span>
-                    </div>
-                </div>
-
-                <!--Recent Items-->
-
-                <div class="recent-items">
-                    <div class="head">
-                        <span class="head-one">Recently played</span>
-                        <span class="head-two">view all</span>
-                    </div>
-                    <div class="recently-played">
-                        <div class="recently-played-first">
-                            <span>1</span>
-                            <span><img
-                                    src="https://lite-images-i.scdn.co/image/ab67616d00001e0213b3e37318a0c247b550bccd"
-                                    alt="" id="recently-played-img" width="50px" /></span>
-                            <span>Perfect</span>
-                        </div>
-                        <div>
-                            <span class="material-icons">favorite_border</span>
-                        </div>
-                    </div>
-                    <div class="recently-played">
-                        <div class="recently-played-first">
-                            <span>2</span>
-                            <span><img
-                                    src="https://i0.wp.com/geetsongs.com/wp-content/uploads/2021/04/images-2021-04-21T210313.148.jpeg?resize=500%2C500&ssl=1"
-                                    alt="" id="recently-played-img" width="50px" /></span>
-                            <span>Aurora</span>
-                        </div>
-                        <div>
-                            <span class="material-icons">favorite_border</span>
-                        </div>
-                    </div>
-                    <div class="recently-played">
-                        <div class="recently-played-first">
-                            <span>4</span>
-                            <span><img
-                                    src="https://lite-images-i.scdn.co/image/ab67616d00001e0213b3e37318a0c247b550bccd"
-                                    alt="" id="recently-played-img" width="50px" /></span>
-                            <span>Perfect</span>
-                        </div>
-                        <div>
-                            <span class="material-icons">favorite_border</span>
-                        </div>
-                    </div>
-                    <div class="recently-played">
-                        <div class="recently-played-first">
-                            <span>5</span>
-                            <span><img
-                                    src="https://i0.wp.com/geetsongs.com/wp-content/uploads/2021/04/images-2021-04-21T210313.148.jpeg?resize=500%2C500&ssl=1"
-                                    alt="" id="recently-played-img" width="50px" /></span>
-                            <span>Aurora</span>
-                        </div>
-                        <div>
-                            <span class="material-icons">favorite_border</span>
-                        </div>
-                    </div>
-                    <div class="recently-played">
-                        <div class="recently-played-first">
-                            <span>7</span>
-                            <span><img
-                                    src="https://lite-images-i.scdn.co/image/ab67616d00001e0213b3e37318a0c247b550bccd"
-                                    alt="" id="recently-played-img" width="50px" /></span>
-                            <span>Perfect</span>
-                        </div>
-                        <div>
-                            <span class="material-icons">favorite_border</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </main>
-    
 </body>
 
 </html>
