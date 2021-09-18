@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -34,8 +35,8 @@
     <header class="header">
         <div class="inner_header">
             <div class="logo_container">
-                <img src="images/logo.png" class="logo_image">
-                <div>Music <br> <b>Studio</b></div>
+                <img src="Assets/Layer 4.png" class="logo_image">
+                <div class="logo_name"><b>Tunify</b></div>
             </div>
             <div class="search_bar">
                 <!--Changes to be made to search bar
@@ -43,7 +44,7 @@
                 2. Responsive only till width of screen is 1024px - Needs to be fixed
                 3. Change logo and fix width of search bar
                  -->
-                <input type="text" placeholder="Search" class="search_text">
+                <input type="text" placeholder="Artists, Songs or Podcasts" class="search_text">
                 <a href="#" class="search_button">
                     <i class="fas fa-search"></i>
                 </a>
@@ -60,22 +61,50 @@
 
         <!--LEFT ASIDE : 15%-->
         <div class="left_aside">
-            <h1>left aside</h1>
-            <h1>left aside</h1>
-            <h1>left aside</h1>
-            <h1>left aside</h1>
-            <h1>left aside</h1>
-            <h1>left aside</h1>
-            <h1>left aside</h1>
-            <h1>left aside</h1>
-            <h1>left aside</h1>
-            <h1>left aside</h1>
-            <h1>left aside</h1>
-            <h1>left aside</h1>
-            <h1>left aside</h1>
-            <h1>left aside</h1>
-            <h1>left aside</h1>
-            <h1>left aside</h1>
+            <div class="left">
+                <div class="left-btns">
+                    <!-- will contain home, search, radio, for you button -->
+                    <ul class="link-btn">
+                        <li>
+                            <a href="http://www.google.com">
+                                <span class="left-icon"><i class="large material-icons">home</i></i></span>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="homepage">
+                                <span class="left-icon"><i class="large material-icons">radio</i></span>
+
+                                <span>Radio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="homepage">
+                                <span class="left-icon"><i class="large material-icons">library_music</i></span>
+                                <span>Your Library</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <br>
+                <div class="left-playlist">
+                    <!-- create playlist and liked playlist -->
+                    <button class="create-playist">
+                        <span class="left-icon"><i class="large material-icons ">add</i></span>
+                        <span class="left-icon">Create Playlist</span>
+                    </button>
+                    <button class="create-playist">
+                        <span class="left-icon"><i class="large material-icons">favorite</i></span>
+                        <span class="left-icon">Liked Songs</span>
+                    </button>
+                </div>
+                <div class="left-list">
+                    list of all playlists created
+                    dard ek dil
+
+                </div>
+            </div>
         </div>
 
 
