@@ -14,29 +14,44 @@ body {
   font-size: 1em;
   background-color: var(--bg-color);
   box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
   color: whitesmoke;
   overflow-x: hidden;
+  
+  
 }
 a{
   text-decoration: none;
 }
+
+/*
+CSS Flexbox Attributes:
+justify-content - set spacing along the main axis
+align-self - align along the cross axis (used for individual div)
+align-items - align along the cross axis(used for all elements in that flexbox)
+
+*/
+
+/* CSS of nav bar */
+
 .header {
   height: 5rem;
-  width: auto;
+  width: 100%;
   color: white;
-  position: sticky;
   margin-bottom: 1em;
+  background-color: var(--bg-color);
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 .inner-head {
-  height: 5rem;
   width: auto;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+  margin: 0em 2em;
 }
 
 .logo-container {
@@ -46,19 +61,17 @@ a{
 }
 #logo-name {
   font-size: 2em;
-  z-index: 1;
 }
 #logo-image {
-  /* transform: translateX(-0.3em); */
   z-index: 0;
 }
 .search-bar {
   display: flex;
-  width: 600px;
+  width: 25em;
   justify-content: end;
 }
 .search-bar .form-bar {
-  width: 350px;
+  width: 25em;
   height: 2.5em;
   border: none;
   border-radius: 25px;
@@ -68,12 +81,6 @@ a{
   color: whitesmoke;
   font-weight: 550;
   font-size: 1em;
-}
-.search-bar .form-bar:focus {
-  width: 600px;
-  border: none;
-  background-color: whitesmoke;
-  color: var(--bg-color);
 }
 .search_button {
   margin-left: -2.5em;
@@ -92,62 +99,116 @@ a{
   width: 50px;
 }
 
-/* Main content - Artist Page */
+/* MAIN CONTENT */
 
-.main-content {
+#div1{
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  justify-content: flex-end;
-  position: relative;
+  top: 5em;
 }
-.artist-main {
-  width: 60%;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: start;
-  margin-left: 1em;
+
+
+/* *LEFT ASIDE (15%) */
+
+.left-aside {
+  width: 15vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 5em;
   box-sizing: border-box;
-  padding: 0px 64px;
+  flex-grow: 2;
+  padding: 1em;
   
+}
+.left{
+  display: block;
+}
+.link-btn a{
+  text-decoration: none;
+  color: white;
+  padding-top: 1em;
+}
+.link-btn li:hover{
+  background-color: var(--light-color);
+  border-radius: 5px;
+}
+
+.left-icon{
+  padding: 1em;
+}
+.link-btn .material-icons{
+  width: 2em;
+  height: 2em;
+  padding-top: 0.5em;
+}
+.left-playlist{
+  display: flexbox;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.create-playist{
+  display: flex;;
+  /* padding-top: 1em;
+  padding-bottom: 1em; */
+  background-color: var(--bg-color);
+  color: whitesmoke;
+  border: none;
+  font-size: 1em;
+  width:100%;
+  text-align: left;
+  flex-wrap: wrap;
+  
+}
+.create-playist:hover{
+  background-color: var(--light-color);
+  border-radius: 5px;
+}
+
+
+/* ARTIST HERO IMAGE(60%) */
+
+.artist-main {
+  /* transform-style: preserve-3d; */
+  max-width: 60vw;
+  height: 100%;
+  margin-left: 16vw;
+  padding:1em 5em 1em 2em;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 10;   /*size of the hero artist grow if space is available */
 }
 .artist {
   background-image: url("https://wallpaperaccess.com/full/1352079.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  width: auto;
   height: 400px;
   box-sizing: border-box;
-  padding-left: 2rem;
-  padding-bottom: 2rem;
+  padding-left: 2em;
+  padding-bottom: 2em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: end;
-  
 }
 #artist-name {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 900;
   letter-spacing: -0.06em;
-  margin: 0;
-  line-height: 2em;
+  margin-left: -0.10em;
+  line-height: 1.8em;
 }
 .artist-detail {
   font-weight: normal;
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 .play {
-  margin-top: 3em;
+  margin-top: 2em;
 }
 .btn {
-  /* background-color: #ff2768;
-  background-color: #e0752d; */
   background-color: #b9017a;
   border: none;
   border-radius: 50%;
@@ -175,28 +236,36 @@ a{
 
 /* Artist Playlist */
 .artist-queue {
-  width: 100%;
+  width: auto;
   padding: 1em;
   background-image: linear-gradient(#055a5c, var(--bg-color));
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 5em;
 }
 .artist-song {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0.5em;
+  flex-shrink: 1;
+  flex-wrap: wrap;
 }
 .artist-song .first-part {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  flex-shrink: 2;
+  flex-wrap: wrap;
 }
 .artist-song .second-part {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap-reverse;
   justify-content: space-evenly;
+  flex-shrink: 1;
 }
 #first-part-img {
   padding: 0 3em;
@@ -205,23 +274,28 @@ a{
   padding: 1em;
 }
 
-/* Right Aside CSS */
-
+/* *RIGHT ASIDE (25%) */
 .right-aside {
-  width: 20%;
+  width: 25vw;
   overflow-x: hidden;
   height: 80vh;
-  -ms-overflow-style: none;  /* IE and Edge */
+  -ms-overflow-style: none;    /* IE and Edge  It preseves the scolling functionality with scroll bar being invisible. */
   scrollbar-width: none; /* Firefox */
-  /* border: 1px red solid; */
   box-sizing: border-box;
-  margin-right: 2em;
+  position: fixed;
+  top: 5em;
+  right: 0em;
+  bottom: 5em;
   
-
-
+}
+@media all and (max-width : 500px)
+{
+  .right-aside{
+    flex-wrap: wrap;
+  }
 }
 .head {
-  margin-bottom: 1em;
+  margin: 0em 0em 1em 1em;
 }
 .head-one {
   font-size: 2em;
@@ -270,60 +344,11 @@ padding: 0em 2em;
 }
 
 
-/* left aside css */
-.left-aside {
-  width: 20%;
-  /* border: 1px red solid; */
-  /* background-color: var(--light-color); */
-  height: 80vh;
-  height: 100%;
+/* *FOOTER / CONTROL BAR */
+.control{
   position: fixed;
-  left: 0;
-  box-sizing: border-box;
-  z-index: 1;
-  padding: 1em;
-  
-}
-.left{
-  display: block;
-}
-.link-btn a{
-  text-decoration: none;
-  color: white;
-  padding-top: 1em;
-}
-.link-btn li:hover{
-  background-color: var(--light-color);
-  border-radius: 5px;
-}
-
-.left-icon{
-  
-  padding: 1em;
-}
-.link-btn .material-icons{
-  width: 2em;
-  height: 2em;
-  padding-top: 0.5em;
-}
-.left-playlist{
-  display: block;
-  /* padding-top: 1em;
-  padding-bottom: 1em; */
-}
-.create-playist{
-  display: block;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  background-color: var(--bg-color);
-  color: whitesmoke;
-  border: none;
-  font-size: 1em;
-  width:100%;
-  text-align: left;
-  
-}
-.create-playist:hover{
-  background-color: var(--light-color);
-  border-radius: 5px;
+  bottom: 0;
+  height: 5em;
+  background-color: rgb(226, 10, 255);
+  width: 100%;
 }
