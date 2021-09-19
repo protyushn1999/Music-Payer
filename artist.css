@@ -163,7 +163,14 @@ align-items - align along the cross axis(used for all elements in that flexbox)
   background-color: var(--light-color);
   border-radius: 5px;
 }
-
+.left-list{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 20vh;
+  /* -ms-overflow-style: none;    IE and Edge  It preseves the scolling functionality with scroll bar being invisible.
+  scrollbar-width: none; Firefox */
+  box-sizing: border-box;
+}
 
 /* ARTIST HERO IMAGE(60%) */
 
@@ -362,16 +369,114 @@ padding: 0em 2em;
 .control{
   position: fixed;
   bottom: 0;
-  height: 5em;
-  background-color: rgb(226, 10, 255);
+  height: 6em;
+  /* background-color: rgb(226, 10, 255); */
+  background-color: var(--light-color);
+  background-color: var(--bg-color);
+  background-color: #2c2c2c;
   width: 100%;
+  background-color: #4158D0;
+background-image: linear-gradient(60deg, #030d3b 0%, #000000 25%, #ac6593 50%,#232c5c 75%, #030d3b 100%);
+background-image: linear-gradient(60deg,  #1b1919 0%, #ac6593 50%, #001542 100%);
 }
+/* background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+
 
 .inner-control{
   display: flex;
-  width: 80%;
+  width: 100%;
+  margin: auto;
+  flex-wrap: nowrap
 }
 .control-song{
   display: flex;
   align-items: center;
+  width: 25%;
+  /* background-color: rgb(162, 48, 207); */
+  flex-shrink: 4;
+  min-width: 200px;
+}
+.control-song .material-icons{
+  width: 30px;
+}
+#control-song-image{
+  padding: 0em 1em;
+  transform: translateY(-1em);
+  
+}
+.song-detail{
+  padding: 0em 1em;
+}
+.control-playbar{
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: auto;
+
+}
+.control-playback{
+  display: flex;
+  width: 100%;
+  justify-content:center
+}
+.control-playback .material-icons{
+  font-size: 20px;
+  padding: 15px 15px;
+  margin-top: 6px;
+}
+#play-btn-control{
+  font-size: 48px;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.control-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.progress-bar{
+  width: 400px;
+  height: 4px;
+  background-color: white;
+  margin: 0 10px;
+  border-radius: 4px;
+}
+.progress-bar .progress{
+  width: 150px;
+  height: 8px;
+  background-color: #9b9b9b;
+  border-radius: 4px;
+  transform: translateY(-2.5px);
+}
+.progress-bar .progress:hover{
+  background-color: #b9017a;
+}
+.control-info{
+  /* background-color: green; */
+  width: 25%;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.volume-down{
+  width: 150px;
+  height: 4px;
+  background-color: whitesmoke;
+  border-radius: 4px;
+}
+.volume-down .volume-up{
+  width: 85px;
+  height: 6px;
+  background-color:#9b9b9b;
+  border-radius: 4px;
+  transform: translateY(-1.5px);
+}
+.volume-down .volume-up:hover{
+  background-color: #b9017a;
 }
