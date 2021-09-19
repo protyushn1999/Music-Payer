@@ -25,6 +25,7 @@ input[type="text"] {
 
 :root {
   --dark-purple: #0c1027;
+  --light-color: #151d46;
 }
 
 
@@ -157,9 +158,77 @@ input[type="radio"] {
   height: 100vh;
   box-sizing: border-box;
   /* border: 1px red solid; */
+  padding: 1em;
   color: white;
   overflow-y: scroll;
 }
+
+.left{
+  display: block;
+}
+.link-btn a{
+  text-decoration: none;
+  color: white;
+  padding-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-btn li{
+  display:flex;
+  margin-bottom: 0.5em;
+  max-height: 2.5em;
+  
+}
+
+.left-icon-text{
+  align-self: center;
+  line-height: 1em;
+  position: relative;
+  top:-0.25em;
+}
+
+.link-btn li:hover{
+  background-color: var(--light-color);
+  border-radius: 5px;
+}
+
+.left-icon{
+  padding: 0 0 0 1em;
+  padding-right:0;
+}
+.link-btn .material-icons{
+  width: 2em;
+  height: 2em;
+  padding-top: 0.5em;
+  
+}
+.left-playlist{
+  display: flexbox;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-family: "DM Sans", sans-serif;
+}
+.create-playist{
+  display: flex;;
+  /* padding-top: 1em;
+  padding-bottom: 1em; */
+  background-color: var(--bg-color);
+  color: whitesmoke;
+  border: none;
+  font-size: 1em;
+  width:100%;
+  text-align: left;
+  flex-wrap: wrap;
+  
+}
+.create-playist:hover{
+  background-color: var(--light-color);
+  border-radius: 5px;
+}
+
+
 
 
 /* *MAIN CONTENT (60%) */
@@ -250,10 +319,10 @@ img {
   box-shadow: 0 0 1% 0 rgba(81, 81, 81, 0.47);
 }
 
-.latest_releases{
+.uniquely_yours{
   /* border: 1px red solid; */  
   height:40%;
-  display:flex;
+  /* display:flex; */
   color: white;
   padding:1.5%;
 }
@@ -261,6 +330,7 @@ img {
 .body_heading{
   font-weight: 500;
   font-size: 1.75em;
+  display: block;
 }
 
 
