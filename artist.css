@@ -25,10 +25,9 @@ input[type="text"] {
 }
 
 
-a{
-  text-decoration: none;
+a, a:visited, a:hover, a:active {
+  color: inherit;
 }
-
 /*
 CSS Flexbox Attributes:
 justify-content - set spacing along the main axis
@@ -355,6 +354,7 @@ align-items - align along the cross axis(used for all elements in that flexbox)
 .similar-artists-song:hover{
   background-color: var(--light-color);
   border-radius: 5px;
+  color: #c1c1c1;
 }
 .similar-artist-name {
   display: flex;
@@ -375,6 +375,7 @@ align-items - align along the cross axis(used for all elements in that flexbox)
 .recently-played:hover{
   background-color: var(--light-color);
   border-radius: 5px;
+  color: #c1c1c1;
 }
 .recently-played-first{
     display: flex;
