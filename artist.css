@@ -129,6 +129,7 @@ align-items - align along the cross axis(used for all elements in that flexbox)
   box-sizing: border-box;
   flex-grow: 2;
   padding: 1em;
+  /* background-color: #191f44; */
   
 }
 .left{
@@ -175,18 +176,25 @@ align-items - align along the cross axis(used for all elements in that flexbox)
   border-radius: 5px;
 }
 .left-list{
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 20vh;
-  /* -ms-overflow-style: none;    IE and Edge  It preseves the scolling functionality with scroll bar being invisible.
-  scrollbar-width: none; Firefox */
+  height: 25vh;
+  overflow-y: auto;
+  /* overflow-x: hidden; */
+  /* -ms-overflow-style: none;    
+  scrollbar-width: none;      */
   box-sizing: border-box;
+  color: whitesmoke;
+  font-weight: 100;
+  line-height: 1.9;
+  letter-spacing: 0.019em;
+  font-size: 14px;
+  padding: 0em 1em;
+  margin: 0;
 }
+
 
 /* ARTIST HERO IMAGE(60%) */
 
 .artist-main {
-  /* transform-style: preserve-3d; */
   max-width: 60vw;
   height: 100%;
   margin-left: 16vw;
@@ -211,6 +219,7 @@ align-items - align along the cross axis(used for all elements in that flexbox)
   align-items: flex-start;
   justify-content: end;
 }
+
 #artist-name {
   font-size: 2.5em;
   font-weight: 900;
@@ -273,6 +282,9 @@ align-items - align along the cross axis(used for all elements in that flexbox)
 }
 .artist-song:hover{
   color: #c1c1c1;
+}
+.artist-song #first-part-img:hover{
+  transform: scale(1.2,1.2);
 }
 .artist-song .first-part {
   display: flex;
@@ -412,8 +424,8 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   width: 30px;
 }
 #control-song-image{
-  padding: 0em 1em;
-  transform: translateY(-1em);
+  padding: 0.5em 1em;
+  /* transform: translateY(-1em); */
   
 }
 .song-detail{
@@ -490,4 +502,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 .volume-down .volume-up:hover{
   background-color: #b9017a;
+}
+.control img:hover{
+  transform: scale(1.2,1.2);
 }
