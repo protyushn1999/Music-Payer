@@ -3,6 +3,7 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  scrollbar-width:none;
 }
 :root {
   --bg-color: #0c1027;
@@ -19,6 +20,11 @@ body {
   
   
 }
+input[type="text"] {
+  font-family: "DM Sans", sans-serif;
+}
+
+
 a{
   text-decoration: none;
 }
@@ -51,7 +57,7 @@ align-items - align along the cross axis(used for all elements in that flexbox)
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  margin: 0em 2em;
+  margin: 0em 1em;
 }
 
 .logo-container {
@@ -64,11 +70,15 @@ align-items - align along the cross axis(used for all elements in that flexbox)
 }
 #logo-image {
   z-index: 0;
+  position: relative;
+  top:2px;
 }
 .search-bar {
   display: flex;
   width: 25em;
   justify-content: end;
+  /* margin:2em; */
+  
 }
 .search-bar .form-bar {
   width: 25em;
@@ -79,7 +89,7 @@ align-items - align along the cross axis(used for all elements in that flexbox)
   flex-shrink: 3;
   background-color: #151d46;
   color: whitesmoke;
-  font-weight: 550;
+  /* font-weight: 550; */
   font-size: 1em;
 }
 .search_button {
@@ -92,11 +102,12 @@ align-items - align along the cross axis(used for all elements in that flexbox)
 .bell-icon {
   margin-left: 2em;
   align-self: center;
+  
 }
 #profile-image {
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 50%;
+  margin:2%;
 }
 
 /* MAIN CONTENT */

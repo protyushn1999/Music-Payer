@@ -49,32 +49,36 @@ align-items - align along the cross axis(used for all elements in that flexbox)
 }
 
 .inner_header {
-  width: 100%;
+  width: auto;
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0 1em;
   background-color: var(--dark-purple);
+  flex-wrap: nowrap;
   align-items: center;
 }
 
 .logo_container {
-  height: 50%;
+  /* height: 50%; */
   display: flex;
   /* align-self: flex-start; */
   flex-direction: row;
-  margin: 2%;
+  justify-content: center;
+  /* margin: 2%; */
   color: white;
-  max-width: 15%;
-  left:0;
+  /* max-width: 15%; */
+  /* left:0; */
   /* position:fixed; */
   align-items: center;
 }
 
 .logo_container img {
-  margin-right: 0.5rem;
-  height: 4em;
+  /* margin-right: 0.5rem; */
+  height: 70px;
+  width:70px;
+  z-index: 0;
 }
 
 .logo_name{
@@ -98,12 +102,17 @@ align-items - align along the cross axis(used for all elements in that flexbox)
 
 .search_bar {
   background: #151d46;
-  border-radius: 2em;
-  margin: 2em;
-  padding: 1%;
+  border-radius: 25px;
+  padding-right:1em;
+  /* padding-left:1em; */
+  /* padding: 1%; */
+  display: flex;
+  justify-content: end;
   /* position: fixed; */
-  left:35vw;
+  /* left:35vw; */
   width: 25em;
+  height: 2.5em;
+  
 }
 
 .search_button {
@@ -113,16 +122,20 @@ align-items - align along the cross axis(used for all elements in that flexbox)
   display: flex;
   justify-content: center;
   align-items: center;
+  /* margin-left:-2.5em; */
 }
 
 .search_text {
   border: none;
-  background: none;
-  outline: none;
-  float: left;
-  padding: 0;
-  color: white;
-  width: 95%;
+  color: whitesmoke;
+  width: 90%;
+  /* height:2.5em; */
+  background-color: #151d46;
+  border-radius:25px;
+  flex-shrink: 3;
+  padding-left:1.5em;
+  /* font-weight:550; */
+  font-size: 1em;
 }
 
 /* *MAIN PAGE */
