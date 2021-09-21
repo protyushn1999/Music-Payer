@@ -155,7 +155,7 @@ input[type="radio"] {
 .left_aside{
   width:15vw;
   position:fixed;
-  float:left;
+  /* float:left; */
   height: 100vh;
   box-sizing: border-box;
   /* border: 1px red solid; */
@@ -166,7 +166,14 @@ input[type="radio"] {
 
 .left{
   display: block;
+  position: fixed;
 }
+
+.left-btns{
+  position: sticky;
+
+}
+
 .link-btn a{
   text-decoration: none;
   color: white;
@@ -197,7 +204,9 @@ input[type="radio"] {
 
 .left-icon{
   padding: 0 0 0 1em;
-  padding-right:0;
+  display: inlline;
+  width: 2em;
+
 }
 .link-btn .material-icons{
   width: 2em;
@@ -207,12 +216,17 @@ input[type="radio"] {
 }
 .left-playlist{
   display: flexbox;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  height: calc(100%-15rem);
+  /* padding-top: 1em; */
+  padding-bottom: 0.5em;
+  position: relative;
   font-family: "DM Sans", sans-serif;
+  /* flex-direction: column; */
 }
 .create-playist{
-  display: flex;;
+  display: flex;
+  max-height: 2.5em;
+  padding:1em 0;
   /* padding-top: 1em;
   padding-bottom: 1em; */
   background-color: var(--bg-color);
@@ -221,7 +235,8 @@ input[type="radio"] {
   font-size: 1em;
   width:100%;
   text-align: left;
-  flex-wrap: wrap;
+  align-items: center;
+  /* flex-wrap: wrap; */
   
 }
 .create-playist:hover{
@@ -229,6 +244,23 @@ input[type="radio"] {
   border-radius: 5px;
 }
 
+.left-list{
+  height: 25vh;
+  overflow-y: auto;
+  /* overflow-x: hidden; */
+  /* -ms-overflow-style: none;    
+  scrollbar-width: none;      */
+  box-sizing: border-box;
+  color: whitesmoke;
+  font-weight: 100;
+  line-height: 1.9;
+  letter-spacing: 0.019em;
+  font-size: 14px;
+  padding: 0em 1em;
+  padding-top:0.2em;
+  margin: 0;
+  padding-bottom:0.5em;
+}
 
 
 
@@ -258,6 +290,7 @@ input[type="radio"] {
   max-width: 60vw;
   height: 40vh; /*!CHANGE THIS ACCORDING TO SCREEN SIZE*/
   padding:1em;
+  padding-bottom: 0.2em;
   /* border: 1px solid yellow; */
 }
 
@@ -550,7 +583,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   transform: translateY(-2.5px);
 }
 .progress-bar .progress:hover{
-  background-color: #b9017a;
+  background-color: #bb0079;
 }
 .control-info{
   /* background-color: green; */
