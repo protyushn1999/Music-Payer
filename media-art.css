@@ -17,30 +17,41 @@ mobile -  not done have to change all
 @media screen and (max-width: 1500px) {
     .left-icon{
         padding: 1em 0em 1em 1em;
-        font-size: 14px;
+        /* font-size: 14px; */
     }
-    .left-names{
-        font-size: 14px;
-    }
+    
 }
 
 
 @media all and (max-width: 1290px){
     .left-aside{
-        width: 15%;
+        width: 15vw;
+        padding-right: 0;
     }
     .artist-main{
-        max-width: 66vw;
-        margin-left: 11vw;
+        max-width: 60vw;
+        margin-left: 15vw;
         padding-right: 1em;
         padding-left: 1em;
     }
     .left-names{
-        padding-left: 1em;
-        
+        /* padding-left: 1em; */
+        color: whitesmoke;
     }
+
+    .left-playlist button{
+        max-height:2.5em;
+    }
+    .link-btn li{
+        /* display:flex; */
+        /* margin-bottom: 0.5em; */
+        max-height: 3em;
+        
+      }
+
+
     .right-aside{
-        width: 22vw;
+        width: 25vw;
         font-size: 0.9em;
     }
     #similarsong{
@@ -66,7 +77,21 @@ mobile -  not done have to change all
 }
 
 
+@media all and (max-width: 1180px){
+    .left-playlist button{
+        max-height:7em;
+    }
+}
+
+
 @media all and (max-width : 990px){
+
+    .link-btn li{
+        margin-bottom: 0;
+        max-height: 5em;
+    }
+
+
     #recently-played-img{
         padding-right: 1em;
         padding-left: 0em;

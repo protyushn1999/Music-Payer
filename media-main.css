@@ -16,7 +16,7 @@ mobile -  not done have to change all
 */
 
 @media screen and (max-width: 1500px) {
-    /* .left-icon{
+    .left-icon{
         padding: 1em 0em 1em 1em;
         font-size: 14px;
     }
@@ -27,21 +27,71 @@ mobile -  not done have to change all
         height:50vh;
         padding-bottom: 7em;
     }
-     */
-}
 
-
-@media all and (max-width: 1200px){
-    
+    .carousel{
+        height:25vh;
+    }
     
 }
 
-/* @media all and (max-width: 1024px){
 
-} */
+@media all and (max-width: 1290px){
+    .left-aside{
+        width: 15vw;
+        padding-right: 0;
+    }
+    .carousel{
+        height:40vh;
+    }
+    
+}
+
+@media all and (max-width:1200px){
+    .left-list{
+        font-size: 0.8em;
+    }
+
+    .carousel{
+        height:40vh;
+    }
+
+    /* .uniquely_yours_content ul{
+        flex-wrap:wrap;
+    } */
+
+    .uniquely_yours_card{
+        max-width:22.5%;
+        
+    }
+    .uniquely_yours_card img{
+        height: 6em;
+        
+      }
+
+      .genres_card img{
+          width:10em;
+      }
+
+}
 
 @media all and (max-width : 990px){
 
+    .uniquely_yours_card{
+        max-width:25%;
+    }
+
+    
+
+    .main-content{
+        margin-left:17vw;
+    }
+    .uniquely_yours{
+        margin-left:7%;
+    }
+
+    .genres_content{
+        width:55vw;
+    }
     .control-playbar{
         display: flex;
         flex-direction: column;
@@ -80,10 +130,20 @@ mobile -  not done have to change all
 
 }
 
-@media all and (max-width : 768px){
+@media all and (max-width : 790px){
     /* .right-aside {
         display: flex;
     } */
+
+    .left_aside{
+        width:15%;
+    }
+    .left-list{
+        display:none;
+    }
+    .link-btn li span{
+        display: block;
+    }
 
     #div1{
         flex-direction: column;
