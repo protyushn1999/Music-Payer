@@ -1,0 +1,207 @@
+/* 
+720 px televison - 1280px * 720px
+width of ipad screen -  
+laptop screen - 15inch - done 1440*900
+laptop screen - 13 inche - fix the left aside 1280*800
+ipad pro -13 inch - done landscape view - 1366 * 1024
+ipad nd ipad mini - fix the left aside
+
+mobile -  not done have to change all
+
+1st breakpoint - >= 1200px
+2nd breakpoint - >= 990px
+3rd breakpoint - >= 768px
+4th breakpoint - >= 576px
+5th breakpoint - >= 360px
+*/
+
+@media screen and (max-width: 1500px) {
+    /* .left-icon{
+        padding: 1em 0em 1em 1em;
+        font-size: 14px;
+    }
+    .left-names{
+        font-size: 14px;
+    }
+    .left-list{
+        height:50vh;
+        padding-bottom: 7em;
+    }
+     */
+}
+
+
+@media all and (max-width: 1200px){
+    
+    
+}
+
+/* @media all and (max-width: 1024px){
+
+} */
+
+@media all and (max-width : 990px){
+
+    .control-playbar{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        min-width: auto;
+      }
+      .control-info{
+        width: 30%;
+        min-width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      .control-song{
+        display: flex;
+        align-items: center;
+        width: 34%;
+        flex-shrink: 4;
+        /* min-width: 200px; */
+      }
+      .carousel{
+          padding-left:3em;
+      }
+      .left-aside{
+          /* display: none; */
+          max-width: 15vw;
+      }
+      .queue{
+          max-width: 20vw;
+      }
+      .queue .heart{
+        display: none;
+    }
+    
+
+}
+
+@media all and (max-width : 768px){
+    /* .right-aside {
+        display: flex;
+    } */
+
+    #div1{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .right-aside{
+        position: relative;
+        top: auto;
+        left: 10vw;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+    }
+    .left-aside{
+        width: 15%;
+    }
+    .artist-main{
+        max-width: 100vw;
+        margin-left: 13vw;
+        padding-right: 1em;
+        padding-left: 1em;
+        transition: max-width 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    .right-aside{
+        flex-direction: column;
+        width: 100vw;
+        overflow-x:unset;
+        padding-bottom: 7em;
+
+    }
+    .similar-artist{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 2em;
+        margin-bottom: 1em;
+        padding: 2em;
+        width: 70vw;
+        justify-content: center;
+    }
+    .similar-artists-song{
+        margin: 0.5em 0.5em;
+    }
+    .head{
+        width: 100vw;
+    
+    }
+    .recent-items{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 2em;
+        margin-top: 1em;
+        padding: 2em;
+        justify-content: space-around;
+        width: 70vw;
+        margin: 0em 2em;
+        margin-bottom: 2em;
+    }
+    #recently-played-img{
+        /* padding-left: 1em; */
+        padding: 0em 0.5em;
+    }
+    .recent-items .material-icons{
+        padding: 0em 0.2em;
+    }
+    .search-bar .form-bar{
+        width: 16em;
+        /* transition: width 500ms easeInBack; */
+        transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        
+    }
+    .song-detail h3{
+        font-size: 1em;
+    }
+
+    .song-detail h4{
+        font-size: 0.8em;
+    }
+    .song-detail{
+        padding-left: 0em;
+    }
+}
+@media all and (max-width : 670px){
+    /* .volume-down{
+        margin-bottom: 20px;
+    } */
+}
+@media all and (max-width : 576px){
+    
+    #control-song-image {
+        padding: 0.5em 0.5em;
+    }
+    .control-song .song-detail{
+        padding: 0;
+    }
+    .control-playback .material-icons{
+        padding: 0.25em;
+    }
+}
+@media all and (max-width : 542px)
+{
+    
+    .right-aside{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .search-bar {
+        width: 14em;
+        /* transition: width 500ms easeInBack; */
+        transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        font-size: 0.8em;
+        
+    }
+    .search-bar .search_button{
+        display: none;
+    }
+    .main_content{
+        margin-left: 15vw;
+    }
+}
