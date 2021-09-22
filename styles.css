@@ -378,7 +378,8 @@ img {
 }
 
 .uniquely_yours_card{
-  width: 25%;
+  /* width: 25%; */
+  width: auto;
   /* border: 1px solid yellow; */
   box-sizing: border-box;
   display: flex;
@@ -388,6 +389,9 @@ img {
   margin-right:1em;
   background-color: var(--medium-color);
   /* height: 100%; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .uniquely_yours_card:hover{
@@ -404,6 +408,7 @@ img {
   flex-direction: row;
   padding-top:1em;
   margin-bottom:6.5em;
+  justify-content: center;
 }
 
 .genres_card{
