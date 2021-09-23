@@ -135,6 +135,29 @@ mobile -  not done have to change all
         display: flex;
     } */
 
+    .link-btn li{
+        max-height:6em;
+    }
+    .create-playist{
+        max-height: 6em;
+    }
+
+    .carousel{
+        max-height: 30vh;
+    }
+
+    .genres_card img{
+        width:7em;
+    }
+
+    .left-icon{
+        width:0.1em;
+        height:5em;
+    }
+.left-icon-text{
+    margin-top:5em;
+}
+
     .left_aside{
         width:15%;
     }
@@ -234,6 +257,33 @@ mobile -  not done have to change all
 }
 @media all and (max-width : 576px){
     
+    .main_content{
+        max-width: 80vw;
+    }
+
+    .queue{
+        
+        width: 80vw;
+        position: relative;
+        top: 135vh;
+        left: -26em;
+        flex-shrink: 0;
+        max-width: 80vw;
+    }
+
+    .queue .heart{
+        display: inline;
+    }
+
+    .carousel{
+        margin-left:3em;
+        max-height: 35vh;
+    }
+
+    .genres_content{
+        width:80vw;
+    }
+
     #control-song-image {
         padding: 0.5em 0.5em;
     }
