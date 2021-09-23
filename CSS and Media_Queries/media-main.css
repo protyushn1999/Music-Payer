@@ -1,18 +1,9 @@
 /* 
-720 px televison - 1280px * 720px
-width of ipad screen -  
-laptop screen - 15inch - done 1440*900
-laptop screen - 13 inche - fix the left aside 1280*800
-ipad pro -13 inch - done landscape view - 1366 * 1024
-ipad nd ipad mini - fix the left aside
-
-mobile -  not done have to change all
 
 1st breakpoint - >= 1200px
 2nd breakpoint - >= 990px
 3rd breakpoint - >= 768px
 4th breakpoint - >= 576px
-5th breakpoint - >= 360px
 */
 
 @media screen and (max-width: 1500px) {
@@ -269,6 +260,7 @@ mobile -  not done have to change all
         left: -26em;
         flex-shrink: 0;
         max-width: 80vw;
+        margin-right: 2em;
     }
 
     .queue .heart{
