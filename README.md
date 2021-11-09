@@ -1,5 +1,7 @@
 # Music Player Project
 
+Deployed at https://protyushn1999.github.io/Music-Payer/
+
 ## Description
 
 As a part of web develeopment course of Coding Ninjas,  we were asked to build screens for a music player using pure HTML and CSS (without Bootstrap or any other frontend framework).
